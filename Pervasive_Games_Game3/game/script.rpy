@@ -84,26 +84,6 @@ label start:
 
     "He stares past you, unblinking. His hand slowly curls into a fist, shaking violently."
 
-    menu:
-        "We don't have paper forks" :
-            jump plasticForks
-
-        "Ask him to leave" :
-            jump leave
-        
-        "Inquire about the smoke" :
-            jump smoke
-
-        "Coffee?" :
-            jump coffee
-
-
-    greg "I need a fork."
-
-    "Do you want any food with that?"
-
-    greg "No, no I just need a paper fork. I have my own food. It was supposed to be such a nice evening…” The man stares past you, unblinking. His eyes are red and bloodshot and his hands, balled at his sides, are shaking violently"
-
     label fork_1:
         menu:
             "We don’t sell packets but I have individual plastic forks I could give you":
