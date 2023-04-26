@@ -52,14 +52,40 @@ label start:
 
     unknown "AWWW FUCK...ehhugh"
 
-    $ renpy.music.set_pause(False, channel="music")
-
-
     scene Store_front_blurred
 
     show Greg
+    with dissolve
 
     greg "...eughh....mhm.."
+
+    $ renpy.music.set_pause(False, channel="music")
+
+    "The man walks into the store, allowing the sea breeze and smoke to come in."
+    "Once the door closes, the sea is gone but the smoke lingers."
+
+    greg "I need a paper fork."
+
+    "Do you want any food with that?"
+
+    greg "No, no. I just need a paper fork. I have my own food"
+    greg "It was supposed to be such a nice evening..."
+
+    "He stares past you, unblinking. His hand slowly curls into a fist, shaking violently."
+
+    menu:
+        "We don't have paper forks" :
+            jump plasticForks
+
+        "Ask him to leave" :
+            jump leave
+        
+        "Inquire about the smoke" :
+            jump smoke
+
+        "Coffee?" :
+            jump coffee
+
 
     # This ends the game.
 
