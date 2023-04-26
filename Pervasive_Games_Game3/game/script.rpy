@@ -58,13 +58,11 @@ label start:
 
     unknown "AWWW FUCK...ehhugh"
 
-<<<<<<< Updated upstream
-=======
+
     $ renpy.music.set_pause(False, channel="music")
 
     "HEY...CAN I HELP YOU??!"
 
->>>>>>> Stashed changes
     scene Store_front_blurred
 
     show Greg
@@ -72,7 +70,6 @@ label start:
 
     greg "...eughh....mhm.."
 
-<<<<<<< Updated upstream
     $ renpy.music.set_pause(False, channel="music")
 
     "The man walks into the store, allowing the sea breeze and smoke to come in."
@@ -101,7 +98,6 @@ label start:
             jump coffee
 
 
-=======
     greg "I need a fork."
 
     "Do you want any food with that?"
@@ -193,7 +189,6 @@ label start:
 
     label fork_end:
         "bye."
->>>>>>> Stashed changes
     # This ends the game.
 
     return
