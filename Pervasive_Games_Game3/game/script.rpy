@@ -220,9 +220,9 @@ label start:
     
 
     label martha_1A:
-        "uhhhh, sure... Is there anything else you need ms?"
-        martha "no I think… WAIT! Tape! I need tape!"
-        "Okay, okay! Calm down!"
+        "Uhhhh, sure... Is there anything else you need Ms?"
+        martha "No I think… WAIT! Tape! I need tape!"
+        "Okay, okay! Calm down! We have some around here."
         martha "“Depends. Is it good tape?"
         jump martha_2
 
@@ -244,24 +244,26 @@ label start:
         "The customer happily pays up, smiling as she hands a 50."
         martha "Keep the rest, you’ve earnt it."
         "Thanks!"
-        martha "Oh, one more thing… Can you help me tape the fishing wire to the pickles? I’ll be back."
+        martha "Oh, one more thing… Can you help me tape the fishing wire to the cucumbers? I’ll be back."
 
 
     label martha_3:
         menu:
             "What? No!":
-                martha "huh! Suit yourself. I'm out!"
+                martha "Huh! Suit yourself. I'm out!"
                 jump martha_end
-            "Sure? ":
+            "Sure?":
                 jump martha_3A
             "Can I ask my manager?":
-                martha "I don’t have time to wait around! I'm out!"
+                martha "I don’t have time to wait for your manager! I'm out!"
                 jump martha_end
     label martha_3A:
 
         martha "Thanks so much darling. I’ll be a second."
 
-        "The woman runs to the bathroom, leaving you to quietly tape up the wire to the pickle, almost creating a makeshift mace. Well, apart from the steel being a bundle of pickles."
+        "The woman runs to the bathroom, leaving you to quietly tape up the wire to the cucumber."
+
+        "..."
 
         "A moment passes before the woman leaves the bathroom with a smile."
 
@@ -269,7 +271,10 @@ label start:
 
         "My pleasure!"
 
-        "The woman leaves the store and can be seen spinning the pickle mace, striking a random persons vehicle with it, denting it. A lovers quarrel? It didn’t matter. There was no way you were getting involved."
+        "Before she leaves, you see her attach the strung up cucumbers to a tub of margirine, then taping it all down. She is quite proud of this creation."
+
+        "The woman leaves the store and can be seen spinning her creation like mace, striking a random person's vehicle with it and somehow denting it."
+        "A lovers quarrel? It didn’t matter. There was no way you were getting involved."
 
     label martha_end:
         hide Martha
@@ -279,32 +284,35 @@ label start:
 
     "Jesus… Am I ever gonna get a break?"
 
-    "an strange customer enters the store, looking around in a daze"
+    "The sea breeze passes even gaster than last time."
+
+    "Another strange customer enters the store, looking around in a daze."
 
     scene Store_front_blurred
 
     show Dylan
+    with dissolve
 
     dylan "Hey bro, haha! You got a sec?"
 
-    "sure, what do you need?"
+    "Sure... What do you need?"
 
-    dylan "Well I’ve got some serious tummy grumbles, like some serious cravings bro and I’ve gotta say I gotta shove some food in my trap or its gonna kill my vibe yo!"
+    dylan "Well I’ve got some serious tummy grumbles, like some serious cravings bro and I’ve gotta shove some food in my trap or its gonna kill my vibe yo!"
 
     label dylan_1:
         menu:
             "We have some food right here!":
                 jump dylan_1A
-            "Are you possibly Inebriated by chance?":
+            "Are you possibly inebriated by chance?":
                 dylan "Nah bro, I'm grown man, I stopped being an embryo like...years ago."
                 "I mean, you're high."
                 dylan "oh no...you're a fed! you're undercover...RUN"
                 "they sprint out the store, leaving a trail of second hand high the store will feel for days."
                 jump dylan_end
-            "Bro’, step back, you reek":
+            "Bro, step back, you reek":
                 dylan "what! It's not like I’ve been smoking pot or anything..."
                 dylan "I mean...not that I usually do...haha..."
-                "they sprint out the store, leaving a trail of second hand high the store will feel for days."
+                "They sprint out the store, leaving a trail of second hand high the store will feel for days."
                 jump dylan_end
 
     label dylan_1A:
@@ -314,6 +322,7 @@ label start:
         "Precise?"
         dylan "Yeah, like this! A jar of pickles will sit just right!"
         "..."
+        "{i}I swear to jesus{/i}"
         "Alright."
         dylan "Yo, what goes well with pickles?"
 
@@ -329,7 +338,8 @@ label start:
     label dylan_2A:
         dylan "nah man, that won’t do. Let me see…"
         dylan "Ah. There we are!"
-        "are you…"
+        "Are you…"
+        "He quickly reaches for a jar of something brown."
         dylan "I’ll put some of this peanut butter on these pickles, this is gonna be rad!"
 
     label dylan_3:
@@ -337,21 +347,21 @@ label start:
             "That is absolutely repugnant!":
                 dylan "Hey! don't diss my taste in food, man!"
                 dylan "Watch yourself buddy...I could do things to you with this pickle that you couldn't even imagine!"
-                "(actually, after the last customer, I think I could!)"
-                "they sprint out the store, leaving a trail of second hand high the store will feel for days."
+                "(Actually after the last customer, I think I could!)"
+                "He then sprints out the store, leaving a trail of second hand high the store will feel for days."
                 jump dylan_end
             "That’ll be 12 dollars!":
                 jump dylan_3A
             "I recommend some donuts instead":
                 dylan "Hey! don't diss my taste in food, man!"
-                dylan "Qatch yourself buddy...I could do things to you with this pickle that you couldn't even imagine!"
-                "(actually, after the last customer, I think I could!)"
-                "they sprint out the store, leaving a trail of second hand high the store will feel for days."
+                dylan "Watch yourself buddy...I could do things to you with this pickle that you couldn't even imagine!"
+                "(Actually after the last customer, I think I could!)"
+                "He quickly sprints out the store, leaving a trail of second hand high the store will feel for days."
                 jump dylan_end
 
     label dylan_3A:
         dylan "All right! This is gonna be siiickk! Oh and I’ve totally gotta add some bubblegum!"
-        "was that all?"
+        "Was that all?"
         dylan "Uhhhh. *cough*, *cough*"
         dylan "Yeah, I should probably bounce."
         "That’ll be 14 dollars!"
@@ -361,8 +371,6 @@ label start:
 
     label dylan_end:
         "Alright. With some luck, that’ll be it for tonight!"
-
-
 
     # This ends the game.
 
