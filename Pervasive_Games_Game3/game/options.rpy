@@ -12,8 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Pervasive_Games_Game3")
-
+define config.name = _("BZ Mart")
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
@@ -23,7 +22,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "0.1"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -37,7 +36,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "Pervasive_Games_Game3"
+define build.name = "BZ Mart"
 
 
 ## Sounds and music ############################################################
@@ -176,24 +175,24 @@ init python:
     ## **.ogg" matches ogg files in the game directory or any of its
     ## subdirectories, and "**.psd" matches psd files anywhere in the project.
 
-    ## Classify files as None to exclude them from the built distributions.
+        ## Classify files as None to exclude them from the built distributions.
 
-    build.classify('**~', None)
-    build.classify('**.bak', None)
-    build.classify('**/.**', None)
-    build.classify('**/#**', None)
-    build.classify('**/thumbs.db', None)
+        build.classify('**~', None)
+        build.classify('**.bak', None)
+        build.classify('**/.**', None)
+        build.classify('**/#**', None)
+        build.classify('**/thumbs.db', None)
 
-    ## To archive files, classify them as 'archive'.
+        ## To archive files, classify them as 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+        # build.classify('game/**.png', 'archive')
+        # build.classify('game/**.jpg', 'archive')
 
-    ## Files matching documentation patterns are duplicated in a mac app build,
-    ## so they appear in both the app and the zip file.
+        ## Files matching documentation patterns are duplicated in a mac app build,
+        ## so they appear in both the app and the zip file.
 
-    build.documentation('*.html')
-    build.documentation('*.txt')
+        build.documentation('*.html')
+        build.documentation('*.txt')
 
 
 ## A Google Play license key is required to download expansion files and perform
