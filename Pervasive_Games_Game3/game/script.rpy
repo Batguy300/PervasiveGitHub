@@ -206,7 +206,7 @@ label start:
 
     martha "No no no."
 
-    label fork_8:
+    label martha_1:
         martha "Oh no. This string wont do! It'll snap within an instant!"
         menu:
             "It'll be fine!":
@@ -215,10 +215,155 @@ label start:
                 martha "A shame... I thought this store would have what i needed..."
             "May i interest you in some fishing wire instead?":
                 martha "Certianly, Cucumbers are so heavy nowadays! That'll help me so much!"
-                jump fork_8A
+                jump martha_1A
 
-    label fork_8A:
+    
+
+    label martha_1A:
         "uhhhh, sure... Is there anything else you need ms?"
+        martha "no I think… WAIT! Tape! I need tape!"
+        "Okay, okay! Calm down!"
+        martha "“Depends. Is it good tape?"
+        jump martha_2
+
+    label martha_2:
+        menu:
+            "it’s great tape!":
+                jump martha_2A
+            "It’s, okay?":
+                martha "Well then its not up to scratch! I'm out!"
+                jump martha_end
+            "No":
+                martha "Well then its not up to scratch! I'm out!"
+                jump martha_end
+
+    label martha_2A:
+        martha "Oh, thank you so much darling."
+        martha "How much will that be?"
+        "47 Dollars please."
+        "The customer happily pays up, smiling as she hands a 50."
+        martha "Keep the rest, you’ve earnt it."
+        "Thanks!"
+        martha "Oh, one more thing… Can you help me tape the fishing wire to the pickles? I’ll be back."
+
+
+    label martha_3:
+        menu:
+            "What? No!":
+                martha "huh! Suit yourself. I'm out!"
+                jump martha_end
+            "Sure? ":
+                jump martha_3A
+            "Can I ask my manager?":
+                martha "I don’t have time to wait around! I'm out!"
+                jump martha_end
+    label martha_3A:
+
+        martha "Thanks so much darling. I’ll be a second."
+
+        "The woman runs to the bathroom, leaving you to quietly tape up the wire to the pickle, almost creating a makeshift mace. Well, apart from the steel being a bundle of pickles."
+
+        "A moment passes before the woman leaves the bathroom with a smile."
+
+        martha "Thank you so much son."
+
+        "My pleasure!"
+
+        "The woman leaves the store and can be seen spinning the pickle mace, striking a random persons vehicle with it, denting it. A lovers quarrel? It didn’t matter. There was no way you were getting involved."
+
+    label martha_end:
+        hide Martha
+        with dissolve
+    
+    scene Store_front
+
+    "Jesus… Am I ever gonna get a break?"
+
+    "an strange customer enters the store, looking around in a daze"
+
+    scene Store_front_blurred
+
+    show Dylan
+
+    dylan "Hey bro, haha! You got a sec?"
+
+    "sure, what do you need?"
+
+    dylan "Well I’ve got some serious tummy grumbles, like some serious cravings bro and I’ve gotta say I gotta shove some food in my trap or its gonna kill my vibe yo!"
+
+    label dylan_1:
+        menu:
+            "We have some food right here!":
+                jump dylan_1A
+            "Are you possibly Inebriated by chance?":
+                dylan "Nah bro, I'm grown man, I stopped being an embryo like...years ago."
+                "I mean, you're high."
+                dylan "oh no...you're a fed! you're undercover...RUN"
+                "they sprint out the store, leaving a trail of second hand high the store will feel for days."
+                jump dylan_end
+            "Bro’, step back, you reek":
+                dylan "what! It's not like I’ve been smoking pot or anything..."
+                dylan "I mean...not that I usually do...haha..."
+                "they sprint out the store, leaving a trail of second hand high the store will feel for days."
+                jump dylan_end
+
+    label dylan_1A:
+        dylan "Yeah bro! You rock!"
+        dylan "Wait…"
+        dylan "Aw no man, you’ve got all these bags of chips and stuff but my stomachs talking to my head and he’s telling me that I need something precise…"
+        "Precise?"
+        dylan "Yeah, like this! A jar of pickles will sit just right!"
+        "..."
+        "Alright."
+        dylan "Yo, what goes well with pickles?"
+
+    label dylan_2:
+        menu:
+            "A greasy burger!":
+                jump dylan_2A
+            "Nothing. Pickles are best alone!":
+                jump dylan_2A
+            "A salad!":
+                jump dylan_2A
+
+    label dylan_2A:
+        dylan "nah man, that won’t do. Let me see…"
+        dylan "Ah. There we are!"
+        "are you…"
+        dylan "I’ll put some of this peanut butter on these pickles, this is gonna be rad!"
+
+    label dylan_3:
+        menu:
+            "That is absolutely repugnant!":
+                dylan "Hey! don't diss my taste in food, man!"
+                dylan "Watch yourself buddy...I could do things to you with this pickle that you couldn't even imagine!"
+                "(actually, after the last customer, I think I could!)"
+                "they sprint out the store, leaving a trail of second hand high the store will feel for days."
+                jump dylan_end
+            "That’ll be 12 dollars!":
+                jump dylan_3A
+            "I recommend some donuts instead":
+                dylan "Hey! don't diss my taste in food, man!"
+                dylan "Qatch yourself buddy...I could do things to you with this pickle that you couldn't even imagine!"
+                "(actually, after the last customer, I think I could!)"
+                "they sprint out the store, leaving a trail of second hand high the store will feel for days."
+                jump dylan_end
+
+    label dylan_3A:
+        dylan "All right! This is gonna be siiickk! Oh and I’ve totally gotta add some bubblegum!"
+        "was that all?"
+        dylan "Uhhhh. *cough*, *cough*"
+        dylan "Yeah, I should probably bounce."
+        "That’ll be 14 dollars!"
+        dylan "Done!"
+        dylan "Cheers bro! You know what? You’re the…"
+        "The customer leaves the building before he can finish what he’s saying, opening his jar of pickles outside. "
+
+    label dylan_end:
+        "Alright. With some luck, that’ll be it for tonight!"
+
+
+
     # This ends the game.
 
     return

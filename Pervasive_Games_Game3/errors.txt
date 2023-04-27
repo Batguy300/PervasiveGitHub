@@ -2,29 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 61: expected statement.
-    <<<<<<< Updated upstream
-                            ^
-
-File "game/script.rpy", line 62: expected statement.
-    =======
-          ^
-
-File "game/script.rpy", line 67: expected statement.
-    >>>>>>> Stashed changes
-                           ^
-
-File "game/script.rpy", line 75: expected statement.
-    <<<<<<< Updated upstream
-                            ^
-
-File "game/script.rpy", line 104: expected statement.
-    =======
-          ^
-
-File "game/script.rpy", line 196: expected statement.
-    >>>>>>> Stashed changes
-                           ^
+File "game/script.rpy", line 314: choice menuitem expects a non-empty block.
+    "A greasy burger!":
+                       ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed Apr 26 21:29:49 2023
+Thu Apr 27 16:25:29 2023
