@@ -261,11 +261,17 @@ label start:
 
         martha "Thanks so much darling. I’ll be a second."
 
+        hide martha
+        with dissolve
+
         "The woman runs to the bathroom, leaving you to quietly tape up the wire to the cucumber."
 
         "..."
 
         "A moment passes before the woman leaves the bathroom with a smile."
+
+        show martha
+        with dissolve
 
         martha "Thank you so much son."
 
@@ -336,7 +342,7 @@ label start:
                 jump dylan_2A
 
     label dylan_2A:
-        dylan "nah man, that won’t do. Let me see…"
+        dylan "Nah man, that won’t do. Let me see…"
         dylan "Ah. There we are!"
         "Are you…"
         "He quickly reaches for a jar of something brown."
